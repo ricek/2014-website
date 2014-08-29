@@ -1,0 +1,18 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image: url(dots.png);
+	background-position: initial initial;
+	background-repeat: initial initial;
+	font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+.container{
+	position: absolute;
+	width: 447px;
+	height: 136px;
+	top: 50%;
+	left: 50%; 
+	margin: -87px 0px 0px -223px;
+	text-align: center;
+}
