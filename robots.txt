@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://liang.gao.nyc/sitemap.xml
