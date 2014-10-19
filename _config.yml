@@ -23,3 +23,5 @@ author:
   google_plus: 101448709392719188970
   linkedin: ricek
   github: ricek
+
+exclude: [CNAME, README.md]
