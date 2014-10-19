@@ -1,0 +1,5 @@
+<li{% if post.lang %} lang={{ post.lang }}{% endif %}>
+	<h2>
+		<a href="{{ post.url | prepend: site.base }}">{{ post.title }}</a>
+	</h2>
+</li>

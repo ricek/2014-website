@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% if page.css %}
+	<style>
+		{{ page.css }}
+	</style>
+{% endif %}
+
+<article>
+	<header>
+		<h2>{{ page.title }}</h2>
+		{% if page.desc %}<small>{{ page.desc }}</small>{% endif %}
+	</header>
+	{{ content }}
+</article>

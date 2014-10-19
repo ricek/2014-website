@@ -1,21 +1,17 @@
-<!DOCTYPE html>
+---
+layout: default
+title: Ricek
+permalink: /
+---
 
-<html>
-<head>
-	<title>Liang Gao</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="Web developer and high school student from NYC.">
-	<meta name="keywords" content="ricek, liang, gao, liang gao, gao dot nyc">
-	<meta name="author" content="Liang Gao">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link href="style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-	<div class="container text-center">
-		<h1>COMING SOON</h1>
-		<p><a href="https://github.com/ricek" target="_blank">GitHub</a> | <a href="https://plus.google.com/u/0/101448709392719188970" target="_blank">Google+</a> | <a href="mailto:lianggao@outlook.com">Email</a></p>
-		<p>Copyright &copy; 2014 <a href="http://gao.nyc/" target="_blank">Gao.Nyc</a></p>
-	</div>
-</body>
-</html>
+<article>
+	<header>
+		<h2>Liang Gao</h2>
+		<small>a.k.a. <b>ricek</b></small>
+		<small class=latest-post>
+			{% for post in site.posts limit:1 %}
+			Recently posted <a href="{{ post.url | prepend: site.base }}" class=latest>{{ post.title }}</a>
+			{% endfor %}
+		</small>
+	</header>
+</article>

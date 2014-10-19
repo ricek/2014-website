@@ -1,0 +1,14 @@
+{% if page.title == "Ricek" %}
+{% else %}
+	<footer class=footer>
+		<ul>
+			<li><a href="{{ site.base }}/">home</a></li>
+			<li>&copy; {{ site.time | date: '%Y' }} <a href="http://gao.nyc/">gao.nyc</a></li>
+		</ul>
+		{% if site.author.google_plus %}
+		<p style="display: none;">
+			<a href="https://plus.google.com/{{ site.author.google_plus }}?rel=author" rel=author>Google+</a>
+		</p>
+		{% endif %}
+	</footer>
+{% endif %}

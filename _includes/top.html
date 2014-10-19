@@ -1,0 +1,34 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name=viewport content="width=device-width, initial-scale=1, minimal-ui">
+
+	{% capture content_description %}
+		{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | truncatewords: 50 | truncate: 210 | replace: '  ', ' ' | replace: '  ', ' ' | replace: '  ', ' ' }}
+	{% endcapture %}
+
+	{% if page.permalink == '/' %}
+	<meta name="description" content="{{ site.description }}">
+	{% else %}
+		{% if page.excerpt %}
+			<meta name=description content="{{ page.excerpt | strip_html | strip_newlines | xml_escape | truncatewords: 30 }}">
+		{% else %}
+			<meta name=description content="{{ content_description }}">
+		{% endif %}
+	{% endif %}
+
+	<title>{{ page.title | strip_html | xml_escape }} | {{ site.author.name }}</title>
+
+	<link rel=alternate href="{{ site.feed | prepend: site.base }}/" type=application/atom+xml>
+
+	<link rel=stylesheet href="{{ '/css/style.css' | prepend: site.assets }}">
+
+	{% if page.title == 'Error' %}
+	<style>
+		html{ background: #000;}
+		body {
+			-webkit-filter: invert(100%);
+			-webkit-backface-visibility: hidden;
+		}	
+	</style>
+	{% endif %}
+</head>

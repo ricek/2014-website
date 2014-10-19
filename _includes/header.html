@@ -1,0 +1,18 @@
+<header>
+	<!--<a href="{{ site.base }}/" class=logo accesskey=x>
+		<h1>{{ site.author.name }}</h1>
+	</a>-->
+	<nav class=navigation>
+		<ul>
+			<li{% if page.permalink == "/" %} class="current"{% endif %}>
+				<a href="{{ '/' | prepend: site.base }}">HOME</a>
+			</li>
+			<li{% if page.permalink == "/discover/" or page.id%} class="current"{% endif %}>
+				<a href="{{ '/discover/' | prepend: site.base }}">DISCOVER</a>
+			</li>
+			<li{% if page.permalink == "/about/" %} class="current"{% endif %}>
+				<a href="{{ '/about/' | prepend: site.base }}">ABOUT</a>
+			</li>
+		</ul>
+	</nav>
+</header>

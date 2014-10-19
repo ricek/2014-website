@@ -1,0 +1,25 @@
+permalink: /:year/:title/
+markdown: redcarpet
+highlighter: pygments
+
+redcarpet:
+  extensions:
+    - footnotes
+    - no_intra_emphasis
+    - smart
+    - space_after_headers
+    - superscript
+    - tables
+
+assets: /assets
+feed: /feed
+base: null
+url: http://liang.gao.nyc
+description: Liang Gao is a student from NYC with a passion for technology.
+
+author:
+  name: Liang Gao
+  email: liang@gao.nyc
+  google_plus: 101448709392719188970
+  linkedin: ricek
+  github: ricek
