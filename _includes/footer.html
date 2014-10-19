@@ -3,6 +3,7 @@
 	<footer class=footer>
 		<ul>
 			<li><a href="{{ site.base }}/">home</a></li>
+			<li><a href="{{ site.feed | prepend: site.base }}/" title="Feed - Atom (The Atom Syndication Format)">Atom</a></li>
 			<li>&copy; {{ site.time | date: '%Y' }} <a href="http://gao.nyc/">gao.nyc</a></li>
 		</ul>
 		{% if site.author.google_plus %}
